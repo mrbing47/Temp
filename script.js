@@ -13,7 +13,7 @@ variance.addEventListener("click", () => {
 
 square.addEventListener("click", () => {
 	let value = input.value.split(" ").map((e) => parseFloat(e));
-	output.innerText = value.reduce((a, c) => a + Math.pow(c, 2)) / value.length;
+	output.innerText = value.reduce((a, c) => a + Math.pow(c, 2), 0) / value.length;
 });
 
 mean.addEventListener("click", () => {
